@@ -24,7 +24,7 @@ ready(function(){
 						var index = filters[specName].indexOf(inputEl.value);
 						filters[specName].splice(index,1);
 						if(!filters[specName].length){
-							delete filters[specName];
+							delete filters[specName];___
 						};
 					}
 					createQueryHash(filters);
@@ -412,7 +412,11 @@ function buildprofileList(data){
 
    	 var list = document.createElement("ul");
    	 addClass(list, "profile-description");
-   	 var html = printLists(obj.lists);
+   	 var proglists = {
+   	 	"JavaScript interests" : obj.lists["JavaScript interests"],
+   	 	"Other programming" : obj.lists["Other programming"]
+   	 }
+   	 var html = printLists(proglists);
    	 list.innerHTML = html;
    	 elementsArray.push(list);  
 
