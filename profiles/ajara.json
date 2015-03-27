@@ -1,0 +1,17 @@
+{
+	"username" : "a_jay",
+	"image"  : "diamond",
+	"superpower" : {
+		"type" : "running",
+		"speed": {
+				"units" : "min/km",
+				"value"	 : 6
+				 }
+				 
+	},
+	"lists": {
+			"JavaScript interests" : ["SPA", "JSON", "jquery"],
+			"Other programming" : ["HTML/CSS", "Git", "CMS", "WP"],
+			"Other interests" : ["Running", "Meditation", "All Things Design"]
+	}
+}
